@@ -4,18 +4,18 @@
 body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #f8ecdd
+  background-color:rgb(177, 255, 255);
 }
 
 header {
-  background-color: #403933;
+  background-color: #443d37;
   margin-bottom: 40px;
 }
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
-  color: #dad4cb;
+  color: #c5c0b8;
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -29,8 +29,6 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: sticky;
-  top: 0;
 }
 
 header nav ul {
@@ -57,7 +55,7 @@ header nav ul li a:hover {
 @media all and (min-width: 700px) {
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .logo {
@@ -95,14 +93,12 @@ footer {
 }
 
 /* ---  Typography --- */
-h1, h2, h3, p {
-  color:#052e26
-}
 
 h1 {
   font-size: 28px;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
+  color: #403933;
 }
 
 h2 {
@@ -129,8 +125,8 @@ main a {
 	text-decoration: none;	
 }
 
-main  a:link { color: #052e26; }
-main  a:visited { color: #052e26; }
+main  a:link { color: #38786a; }
+main  a:visited { color: #38786a; }
 main  a:hover { color: #403933; }
 a:active { color: #403933; }
 
@@ -147,13 +143,11 @@ footer p {
 
 
 main img {
-  width: 50%;
-  height: auto
+  width: 100%;
 }
 
-
 img.image-enhanced {
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .group {
@@ -188,7 +182,8 @@ img.image-enhanced {
 /* Contact Form Design */
 
 form {
-  padding-right: 200px;
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
 }
 
 form label {
